@@ -9,7 +9,7 @@ import {
   type AttributesProps,
 } from '~/utils/images-optimization';
 
-type Props = ImageProps;
+type Props = ImageProps & { class?: string };
 type ImageType = {
   src: string;
   attributes: AttributesProps;
@@ -53,12 +53,21 @@ if (typeof _image === 'string') {
 } else if (_image) {
   image = await getImagesOptimized(_image, props, astroAsseetsOptimizer);
 }
+
+const defaultClass = 'mx-auto w-full rounded-lg bg-gray-500 shadow-lg';
+const finalClass = `${defaultClass} ${props.class ?? ''}`.trim();
 ---
 
 {
   !image ? (
     <Fragment />
   ) : (
-    <img src={image.src} crossorigin="anonymous" referrerpolicy="no-referrer" {...image.attributes} />
+    <img
+      src={image.src}
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      {...image.attributes}
+      class={finalClass}
+    />
   )
 }

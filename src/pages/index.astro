@@ -30,14 +30,18 @@ const metadata = {
       { text: 'DIY Design Newsletter', href: '#features' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '/assets/pink-portal.webp',
       alt: 'AstroWind Hero Image',
     }}
   >
-    <Fragment slot="title"> WEBSITES FOR SOCIAL MEDIA CONTENT CREATORS </Fragment>
+    <Fragment slot="title"> WEBSITES THAT CONVERT YOUR AUDIENCE TO CUSTOMERS</Fragment>
 
     <Fragment slot="subtitle">
-      Make it easy for clients to come to you. Let’s chat, book a meeting below to get started.
+      Make it easy for clients to come to you. Let’s chat about your sales funnel. Book a meeting below to get started.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-dark linear-purple-gradient"></div>
     </Fragment>
   </Hero2>
 
@@ -63,8 +67,9 @@ const metadata = {
       },
     ]}
     image={{
-      src: '#',
+      src: '/assets/purple-magnet.webp',
       alt: 'Magnet Image',
+      class: 'mix-blend-screen',
     }}
   >
     <Fragment slot="content"> Magnetize your audience easily </Fragment>
@@ -95,23 +100,25 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Cube Image',
+      src: '/assets/purple-cube.webp',
+      alt: 'Magnet Image',
+      class: 'mix-blend-screen',
     }}
   >
     <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:bg-dark linear-purple-gradient"></div>
     </Fragment>
+    <Fragment slot=""> </Fragment>
   </Content>
 
   <!-- Features2 Widget ************** -->
 
   <Features2
-    tagline="What we do"
-    title="Services we offer"
-    subtitle="We specialize in web design and branding services for content creators."
+    tagline="What We Do"
+    title="Services We Offer"
+    subtitle="We specialize in web design and branding services for content creators on X (Twitter)."
     items={[
       {
         title: 'Branding',
@@ -131,7 +138,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-blue-50 dark:radial-purple-gradient"></div>
     </Fragment>
   </Features2>
 
@@ -269,7 +276,7 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title"> Want to get an idea of the price? </Fragment>
+    <Fragment slot="title"> Want a price estimate? </Fragment>
 
     <Fragment slot="subtitle">
       We've made it easy to get a straightforward quote. Fill out the brief form and we'll have a customized project

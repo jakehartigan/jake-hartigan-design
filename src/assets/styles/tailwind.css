@@ -21,6 +21,19 @@
   .text-muted {
     color: var(--aw-color-text-muted);
   }
+  .mix-blend-screen {
+    mix-blend-mode: screen;
+  }
+  .linear-purple-gradient {
+    background: linear-gradient(to top, rgba(151, 71, 255, 0.2), rgba(18, 8, 32, 0.1));
+  }
+  .radial-purple-gradient {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(151, 71, 255, 0.5) 0%, rgba(151, 71, 255, 0) 46%);
+  }
+  .bg-blur {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(calc(var(--Blur100-strong, 100px) / 2));
+  }
 }
 
 @layer components {
