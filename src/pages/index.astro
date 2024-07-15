@@ -5,6 +5,7 @@ import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
+import Hero from '~/components/widgets/Hero.astro';
 // import Brands from '~/components/widgets/Brands.astro';
 // import Testimonials from '~/components/widgets/Testimonials.astro';
 
@@ -30,11 +31,15 @@ const metadata = {
       { text: 'DIY Design Newsletter', href: '#features' },
     ]}
     image={{
-      src: '/assets/pink-portal.webp',
-      alt: 'AstroWind Hero Image',
+      src: '/assets/purple-funnel.webp',
+      alt: 'Image of a glass funnel',
+      class: 'mix-blend-screen',
     }}
   >
-    <Fragment slot="title"> WEBSITES THAT CONVERT YOUR AUDIENCE TO CUSTOMERS</Fragment>
+    <Fragment slot="title">
+      WEBSITES THAT <span class="text-accent highlight">CONVERT YOUR AUDIENCE</span>
+      TO CUSTOMERS</Fragment
+    >
 
     <Fragment slot="subtitle">
       Make it easy for clients to come to you. Let’s chat about your sales funnel. Book a meeting below to get started.
@@ -44,6 +49,29 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-dark linear-purple-gradient"></div>
     </Fragment>
   </Hero2>
+
+  <!-- Hero Widget **************** -->
+
+  <Hero
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book A FREE Meeting Now',
+        href: '#',
+        target: '_blank',
+        // icon: 'tabler:arrow-right',
+      },
+      // { text: 'Learn more', href: '#features' },
+    ]}
+  >
+    <Fragment slot="title"> Case Study </Fragment>
+    <Fragment slot="subtitle"
+      >Watch the video below to see how we helped Joey. After click the button to book your own meeting to learn how we
+      can get you similar results.</Fragment
+    >
+
+    <Fragment slot="video">https://www.youtube.com/watch?v=nLUYaJnMCZs</Fragment>
+  </Hero>
 
   <!-- Content Widget **************** -->
 
@@ -67,8 +95,8 @@ const metadata = {
       },
     ]}
     image={{
-      src: '/assets/purple-magnet.webp',
-      alt: 'Magnet Image',
+      src: '/assets/purple-sphere.webp',
+      alt: 'Image of a glass sphere',
       class: 'mix-blend-screen',
     }}
   >

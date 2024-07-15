@@ -34,6 +34,16 @@
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(calc(var(--Blur100-strong, 100px) / 2));
   }
+  .video-responsive {
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+  }
+  .video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @layer components {
