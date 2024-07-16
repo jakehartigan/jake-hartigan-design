@@ -9,7 +9,7 @@ import mdx from '@astrojs/mdx';
 import partytown from '@astrojs/partytown';
 import icon from 'astro-icon';
 import compress from 'astro-compress';
-
+import preact from '@astrojs/preact';
 import astrowind from './vendor/integration';
 
 import {
@@ -31,6 +31,7 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
+    [preact()],
     sitemap(),
     mdx(),
     icon({

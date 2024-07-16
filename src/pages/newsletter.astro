@@ -1,0 +1,35 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import SubscribeForm from '~/components/preact/SubscribeForm';
+
+const metadata = {
+  title: 'Subscribe to The Metabolic Memo',
+  description: 'Practical tips to melt fat and build muscle',
+  openGraph: {
+    images: [
+      {
+        url: '/assets/newsletter-twitter-card.png', // Change this to the desired image URL
+        width: 1200,
+        height: 628,
+      },
+    ],
+  },
+  twitter: {
+    image: '/assets/newsletter-twitter-card.png', // Change this to the desired image URL
+    description: 'Practical tips to melt fat and build muscle',
+  },
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    title="DIY Design Newsletter"
+    subtitle="A design newsletter for the solopreneur. Learn how to make things look good, and work well."
+  />
+  <!-------------MailerLite Embed -->
+
+  <SubscribeForm client:load />
+</Layout>

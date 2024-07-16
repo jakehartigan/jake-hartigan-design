@@ -218,6 +218,9 @@ export interface Hero extends Omit<Headline, 'classes'>, Omit<Widget, 'isDark' |
   actions?: string | CallToAction[];
   image?: string | unknown;
   youtubeLink?: string | unknown;
+  video?: string;
+  id?: string;
+  bg?: string;
 }
 
 export interface Team extends Omit<Headline, 'classes'>, Widget {
