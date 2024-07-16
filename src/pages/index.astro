@@ -25,7 +25,7 @@ const metadata = {
         variant: 'primary',
         target: '_blank',
         text: 'Check availability',
-        href: 'https://calendar.app.google/FiWwHQAmXENTquhHA',
+        href: 'https://calendly.com/admin-vmfk/consultation-call',
         icon: 'tabler:arrow-right',
       },
       { text: 'DIY Design Newsletter', href: '#features' },
@@ -57,7 +57,7 @@ const metadata = {
       {
         variant: 'primary',
         text: 'Book A FREE Meeting Now',
-        href: '#',
+        href: 'https://calendly.com/admin-vmfk/consultation-call',
         target: '_blank',
         // icon: 'tabler:arrow-right',
       },
@@ -169,6 +169,27 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:radial-purple-gradient"></div>
     </Fragment>
   </Features2>
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Check Availability',
+        href: 'https://calendly.com/admin-vmfk/consultation-call',
+        target: '_blank',
+        icon: 'tabler:arrow-right',
+      },
+    ]}
+  >
+    <Fragment slot="title"> We want to know your story. </Fragment>
+
+    <Fragment slot="subtitle">
+      We want to know about your business. During our free consultation we will meet with you to learn about your
+      business and how we can help your improve.
+    </Fragment>
+  </CallToAction>
 
   <!-- Testimonials Widget *********** -->
   <!-- 
