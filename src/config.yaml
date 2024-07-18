@@ -18,7 +18,7 @@ metadata:
   openGraph:
     site_name: Jake Hartigan Design
     images:
-      - url: '~/assets/images/Default.png'
+      - url: '~/assets/Default.png'
         width: 1200
         height: 628
     type: website
@@ -27,7 +27,7 @@ metadata:
     site: '@JHartiganDesign'
     creator: '@jHartiganDesign'
     cardType: summary_large_image
-    image: '~/assets/images/Default.png'
+    image: '~/assets/Default.png'
     description: 'Design tips for the Soloprenuer'
 
 i18n:
